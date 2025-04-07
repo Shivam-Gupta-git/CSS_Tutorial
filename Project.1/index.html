@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+          scroll-behavior: smooth;
+        }
+        :root{
+          --navbar-height:59px;
+        }
+        #main{
+         display: flex;
+         position: sticky;
+         align-items: center;
+         top: 0px;
+           
+        }
+        #main::before{
+          content: "";
+          z-index: -1;
+          opacity: 0.4;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          background-color: black;
+          padding: 5px;
+        }
+        #main ul{
+            display: flex;
+           padding: 10px;
+           
+        }
+        #main ul li{
+          
+            font-size: 1.2rem;
+            list-style: none;
+        }
+        #main ul li a{
+            text-decoration: none;
+            padding: 5px 22px;
+           border-radius:20px ;
+           color: white;
+           display: block;
+          
+         
+        }
+        #main ul li a:hover{
+            color: black;
+            background-color: white;
+        }
+        #home{
+         
+          display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 180px;
+        height: 200px;
+        }
+        #home::before{
+          content: "";
+        position: absolute;
+        z-index: -1;
+        opacity: 0.89;
+        width: 100%;
+        background: url(bg.jpg) no-repeat center center/cover;
+        height: 300px;
+        top: 0px;
+        left: 0px;
+        }
+        .main h1{
+            display: block;
+            text-align: center;
+            padding: 5px 22px;
+            color: rgb(0, 0, 0);
+            font-size: 2.5rem;
+            
+
+        }
+        .main  p{
+           color: rgb(0, 0, 0);
+           text-align: center;
+           display: inline-block;
+          font-size: 1.1rem;
+          line-height: 1.3rem;
+          font-weight: bold;
+          font-style: italic;
+        }
+        input[type=search]{
+            padding: 20px;
+          width: 650px;
+          margin: 10px;
+        border:2px solid black;
+        border-style: groove;
+        border-radius: 20px;
+        height: 30px;
+         font-size: 18px; 
+        background-position: 0% 50%;
+        background-repeat: no-repeat;
+        background-size: 35px; 
+        background-image: url(s.png);
+        background-color: white; 
+        display: inline-block;
+        }
+       #dis{
+       
+           display: inline-block;
+       }
+       #dis ul{
+        display: flex;
+       }
+       #dis ul li{
+        list-style: none;
+        padding: 42px;
+        font-size: 1.3rem;
+       }
+       #dis ul li a{
+        text-decoration: none;
+        color:black;
+        display: block;
+       border-radius: 20px;
+       padding: 5px 15px;
+       }
+       #dis ul li a:hover{
+        background-color: rgba(229, 222, 222, 0.541);
+        color: black;
+       }
+       #top{
+        display: inline-block;
+       border: 2px  solid black;
+        border-radius: 20px ;
+     
+       }
+       #top ul{
+        display: flex;
+       }
+       #top ul li{
+        list-style: none;
+      font-size: 1rem;
+
+       }
+       #top ul li a{
+       
+text-decoration: none;
+color: black;
+font-size: 1rem;
+
+display: block;
+border-radius: 50px;
+padding: 0px 55px
+
+       }
+       #top ul li a:hover{
+      
+      text-decoration: underline;
+      
+       }
+       p{
+        display: inline-block;
+        padding: 0px 6rem;
+        font-size: 1rem;
+        font-style: italic;
+    
+       }
+
+       /* Find Dining */
+       #low{
+       border-style: solid;
+       border: 5px solid  rgb(240, 236, 236);
+       height: 29vh;
+       background-color: rgb(240, 236, 236);
+       }
+       .box1 p{
+        color:black;
+        text-decoration: underline;
+      
+font-size: 1.8rem;
+display: block;
+}
+.box2{
+    display: inline-block;
+    background-color: white ;
+    height: 22vh;
+    width: 15vw;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 2px;
+    background: url(box2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
+  
+}
+.box2 p{
+   padding: 132px 1px;
+}
+.box2 p a{
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    font-size: 1.2rem;
+    display: block;
+}
+.box2 p a:hover{
+  text-decoration: underline; 
+ }
+
+.box3{
+    display: inline-block;
+    background-color: white;
+    height: 22vh;
+    width: 15vw;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 2px;
+    background: url(box3.jpg);
+    background-repeat: no-repeat;
+   background-size: 100% 75%;
+}
+.box3 p{
+    padding: 132px 1px;
+}
+.box3 p a{
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    font-size: 1.2rem;
+    display: block;
+}
+.box3 p a:hover{
+    text-decoration: underline;
+}
+.box4{
+    display: inline-block;
+    background-color: white;
+    height: 22vh;
+    width: 15vw;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 2px;
+    background: url(box4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
+}
+.box4 p{
+    padding: 132px 1px;
+}
+.box4 p a{
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    font-size: 1.2rem;
+    display: block;
+}
+.box4 p a:hover{
+    text-decoration: underline;
+}
+.box5{
+    display: inline-block;
+    background-color: white;
+    height: 22vh;
+    width: 15vw;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 2px;
+background: url(box5.jpg);
+background-repeat: no-repeat;
+background-size: 100% 75%;
+}
+.box5 p{
+    padding: 131px 1px;
+}
+.box5 p a{
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    font-size: 1.2rem;
+    display: block;
+}
+.box5 p a:hover{
+    text-decoration: underline;
+}
+.box6{
+    display: inline-block;
+    background-color: white;
+    height: 22vh;
+    width: 15vw;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 2px;
+    background: url(box6.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
+}
+.box6 p{
+    padding: 132px 1px;
+}
+.box6 p a{
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    font-size: 1.2rem;
+    display: block;
+}
+.box6 p a:hover{
+    text-decoration: underline;
+}
+    </style>
+    <style>
+        
+        /* Browse Patna by Food */
+        #high{
+            border-style: solid;
+       border: 5px solid  rgb(240, 236, 236);
+       height: 40vh;
+       background-color: rgb(240, 236, 236);
+       }
+       .boxx1 p{
+        color:black;
+        text-decoration: underline;
+      
+        font-size: 1.8rem;
+        display: block;
+       }
+
+       .boxx2{
+        display: inline-block;
+    background-color: white ;
+    height: 20vh;
+    width: 12vw;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 2px;
+    background: url(boxx2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
+       }
+       .boxx2 p{
+        padding: 131px 10px;
+       }
+       .boxx2 p a{
+        text-decoration: none;
+    font-style: normal;
+    color: black;
+    font-size: 1.3rem;
+    display: block;
+       }
+       .boxx2 p a:hover{
+        text-decoration: underline;
+       }
+
+
+       .boxx3{
+        display: inline-block;
+    background-color: white ;
+    height: 20vh;
+    width: 12vw;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 2px;
+    background: url(boxx3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
+       }
+       .boxx3 p{
+        padding: 131px 10px;
+       }
+       .boxx3 p a{
+        text-decoration: none;
+    font-style: normal;
+    color: black;
+    font-size: 1.3rem;
+    display: block;
+       }
+       .boxx3 p a:hover{
+        text-decoration: underline;
+       }
+
+
+       .boxx4{
+        display: inline-block;
+    background-color: white ;
+    height: 20vh;
+    width: 12vw;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 2px;
+    background: url(boxx4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
+       }
+       .boxx4 p{
+        padding: 131px 10px;
+       }
+       .boxx4 p a{
+        text-decoration: none;
+    font-style: normal;
+    color: black;
+    font-size: 1.3rem;
+    display: block;
+       }
+       .boxx4 p a:hover{
+        text-decoration: underline;
+       }
+       .boxx5{
+        display: inline-block;
+    background-color: white ;
+    height: 20vh;
+    width: 12vw;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 2px;
+    background: url(boxx5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
+       }
+       .boxx5 p{
+        padding: 131px 10px;
+       }
+       .boxx5 p a{
+        text-decoration: none;
+    font-style: normal;
+    color: black;
+    font-size: 1.3rem;
+    display: block;
+       }
+       .boxx5 p a:hover{
+        text-decoration: underline;
+       }
+       .boxx6{
+        display: inline-block;
+    background-color: white ;
+    height: 20vh;
+    width: 12vw;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 2px;
+    background: url(boxx6.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
+       }
+       .boxx6 p{
+        padding: 131px 10px;
+       }
+       .boxx6 p a{
+        text-decoration: none;
+    font-style: normal;
+    color: black;
+    font-size: 1.3rem;
+    display: block;
+       }
+       .boxx6 p a:hover{
+        text-decoration: underline;
+       }
+
+       /* Frequently asked question about Patna */
+       #power{
+        border-style: solid;
+        border: 5px solid  rgb(240, 236, 236);
+        height: 50vh;
+        background-color:  rgb(240, 236, 236);
+      }
+       .boxx7{
+
+         background-color:  rgb(240, 236, 236);
+         border:1px solid  rgb(240, 236, 236);
+         height: 5vh;
+         width: 70vw;
+         margin: 0px 90px;
+         border-left: 5px;
+         border-right: 5px;
+        display: block;
+        }
+        .boxx7 p{
+            padding: 0px 10px;
+            font-size: 1.5rem;
+        font-style: italic;
+        }
+     
+      .boxx8{ 
+        display: inline-block;
+        background-color: rgb(240, 236, 236);
+        height: 5vh;
+        width: 70vw;
+        border: 1px solid black;
+        border-right: 5px;
+        border-left: 5px;
+       margin: 0px 90px;
+      }
+      .boxx8 p {
+        padding: 10px;
+        font-style: normal;
+        margin: 0px 25px;
+        font-size: 1rem;
+      }
+      .boxx8 p a{
+        color: black;
+        text-decoration: none;
+      }
+      .boxx8 p a:hover{
+        text-decoration: underline;
+      }
+      .arrow1 a{
+        position: relative;
+        left: 955px;
+        bottom: 40px;
+      }
+     .boxx9{
+        display: inline-block;
+        background-color: rgb(240, 236, 236);
+        height: 5vh;
+        width: 70vw;
+        border: 1px solid black;
+        border-right: 5px;
+        border-left: 5px;
+       margin: 0px 90px;
+      }
+      .boxx9 p {
+        padding: 10px;
+        font-style: normal;
+        margin: 0px 25px;
+        font-size: 1rem;
+      }
+      .boxx9 p a{
+        color: black;
+        text-decoration: none;
+      }
+      .boxx9 p a:hover{
+        text-decoration: underline;
+      }
+      .arrow2 a{
+        position: relative;
+        left: 955px;
+        bottom: 40px;
+      }
+      .boxx10{
+        display: inline-block;
+        background-color: rgb(240, 236, 236);
+        height: 5vh;
+        width: 70vw;
+        border: 1px solid black;
+        border-right: 5px;
+        border-left: 5px;
+       margin: 0px 90px;
+      }
+      .boxx10 p {
+        padding: 10px;
+        font-style: normal;
+        margin: 0px 25px;
+        font-size: 1rem;
+      }
+      .boxx10 p a{
+        color: black;
+        text-decoration: none;
+      }
+      .boxx10 p a:hover{
+        text-decoration: underline;
+      }
+      .arrow3 a{
+        position: relative;
+        left: 955px;
+        bottom: 40px;
+      }
+     .boxx11{
+        display: inline-block;
+        background-color: rgb(240, 236, 236);
+        height: 5vh;
+        width: 70vw;
+        border: 1px solid black;
+        border-right: 5px;
+        border-left: 5px;
+       margin: 0px 90px;
+     }
+     .boxx11 p {
+        padding: 10px;
+        font-style: normal;
+        margin: 0px 25px;
+        font-size: 1rem;
+      }
+      .boxx11 p a{
+        color: black;
+        text-decoration: none;
+      }
+      .boxx11 p a:hover{
+        text-decoration: underline;
+      }
+      .arrow4 a{
+        position: relative;
+        left: 955px;
+        bottom: 40px;
+      }
+     
+    </style>
+</head>
+<body>
+    <div id="main">
+<ul>
+    
+    <li class="item"><a href="#">Home</a></li>
+    <li class="item"><a href="#">Shivam</a></li>
+    <li class="item"><a href="#">Contact us</a></li>
+    <li class="item"><a href="#">About us</a></li>
+</ul>
+    </div>
+    <section id="home">
+        <div class="main">
+<h1><b>Best Restaurants in patna</b></h1>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, aliquid, vel placeat, eveniet dolorum maiores at consectetur labore corporis tempore eos exercitationem! Dicta, cumque quisquam?</p>
+
+</div>
+    </section>
+   
+    <input type="search" class="search">
+   <div id="dis">
+    <ul>
+    
+        <li class="tip"><a href="#">Discover</a></li>
+        <li class="tip"><a href="#">Trips</a></li>
+        <li class="tip"><a href="#">Review</a></li>
+        <li class="tip"><a href="#">Sign in</a></li>
+    </ul>
+   </div>
+   <div id="top">
+    <ul>
+        <li class="tip"><a href="#">Patna</a></li>
+        <li class="tip"><a href="#">Hotels</a></li>
+        <li class="tip"><a href="#">Flights</a></li>
+        <li class="tip"><a href="#">Restaurants</a></li> 
+        <li class="tip"><a href="#">Car Hire</a></li>
+        <li class="tip"><a href="#">Holiday homes</a></li>
+    </ul>
+   </div>
+   <p>
+    Top 5 Restaurants in Patna, India
+   </p><br>
+   <section id="low">
+<dis class="box1">
+    <p>Find Dining....</p>
+</dis>
+<dis class="box2">
+   <p><a href="https://g.co/kgs/4FynuPM">Gandhali Restaurant</a>★★★★⭐︎  Italian, Chinese</p>
+</dis>
+<dis class="box3">
+<p><a href="https://g.co/kgs/bgVmeX3">Four Seasons</a>★★★★⭐︎ Indian, Southindian</p>
+</dis>
+<div class="box4">
+<p><a href="https://g.co/kgs/3Uuyd3t">Nirvana The Fine Dine</a>★★★★ Chinese, Indian</p>
+</div>
+<div class="box5"><p><a href="https://g.co/kgs/MEdBhcH">Barbeque Nation</a>★★★★⭐︎ Chinese, Southindian</p>
+</div>
+<div class="box6"><p><a href="https://g.co/kgs/J2eKHhE">The Downtown Cafe</a>★★★★⭐︎ Chinese, Indian</p>
+
+</div>
+   </section>
+
+   <section id="high">
+    <div class="boxx1"><p>Browse Patna by Food</p></div>
+    <div class="boxx2"><p><a href="https://g.co/kgs/UuNhZiv">Indian</a></p>
+
+    </div>
+    <div class="boxx3"><p><a href="https://g.co/kgs/tvFb23i">Chinese</a></p>
+
+    </div>
+    <div class="boxx4"><p><a href="https://g.co/kgs/sB21g6C">Asian</a></p>
+
+    </div>
+    <div class="boxx5"><p><a href="https://g.co/kgs/qTw9M1D">South Indian</a></p>
+
+    </div>
+    <div class="boxx6"><p><a href="https://g.co/kgs/BofAALa">Cafe</a></p>
+ </div>
+ 
+    </section>
+  
+     <section id="power">
+        <div class="boxx7"><p>⚫️ Frequently Asked Questions about Patna...</p></div>
+        <div class="boxx8">
+            <p><a href="#">What are the best Restaurants in Patna that deliver?</a></p>
+            <div class="arrow1"><p><a href="#">⌄</a></p></div>
+         </div>
+         <div class="boxx9">
+         <p><a href="#">What are the most popular Restaurants in Patna?</a></p>
+         <div class="arrow2"><p><a href="#">⌄</a></p></div>
+         </div>
+         <div class="boxx10">
+         <p><a href="#">What are the best Restaurants in Patne fir families with children?</a></p>
+         <div class="arrow1"><p><a href="#">⌄</a></p></div>
+         </div>
+         <div class="boxx11"><p><a href="#">What are the best Restaurants in Patna for cheap eats?</a></p>
+          <div class="arrow1"><p><a href="#">⌄</a></p></div>
+        </div>
+          
+     </section>
+
+     
+  
+</body>
+</html>
+

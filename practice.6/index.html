@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice.6</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #navbar{
+            display: flex;
+            position: sticky;
+            top: 0px;
+            align-items: center;
+        }
+        #navbar::before{
+            content: "";
+            z-index: -1;
+            opacity: o.4;
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            
+        }
+        #navbar ul{
+           display: flex;
+           padding: 20px;
+        }
+        #navbar ul li{
+            list-style: none;
+            font-size: 1.2rem;
+        }
+        #navbar ul li a{
+            text-decoration: none;
+            color: white;
+           border-radius: 20px;
+           padding: 5px 30px;
+        }
+        #navbar ul li a:hover{
+            color: black;
+            background-color: white;
+        }
+       
+        /* using float Property */
+        .left{
+            height: 100vh;
+            width: 40vw;
+            background-color: aqua;
+            float: left;
+            text-align: center;
+        }
+        .right{
+            height: 100vh;
+            width: 40vw;
+            background-color: bisque;
+            float: right;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+        <nav id="navbar">
+            <ul>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Location</a></li>
+                <li class="item"><a href="#">Contact us</a></li>
+                <li class="item"><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        <header id="main">
+            <div class="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae non cum tempore, architecto veritatis sed aliquam laudantium perspiciatis repellat exercitationem tempora laboriosam hic voluptas sunt sint quisquam eveniet quos labore dolore sequi velit!</div>
+             <div class="right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi eaque architecto distinctio vel pariatur esse consequuntur ut cupiditate adipisci alias, deleniti quisquam nesciunt eius natus nulla. Omnis repellat obcaecati adipisci odio magnam rerum minus reprehenderit? Sequi odio iure, laborum suscipit iste minus voluptatibus dolorum!</div>
+            </header>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unit</title>
+    <style>
+       
+        /* 1.em unit = unit relative to the parent font size ,(patent =n , child = n*3) */ 
+
+        .container p{
+         font-size: 3px;   
+        }
+        .box{
+            font-size: 15px;
+        }
+        /* 2.rem = unit relative to the root fonts size (<HTML> tag) 
+           (N rem = N*3px) */
+
+.html{
+    font-size: 45px;
+}
+.box2{
+    font-size: 3rem;
+}
+/* vw = viwer device width 
+      vh= viwer device height */
+.box3{
+    background-color: aqua;
+    color: brown;
+    width: 50vw;
+}
+.box4{
+    background-color: bisque
+    ;color: blue;
+    height: 20vw;
+}
+   
+    </style>
+</head>
+<body>
+     <div class="container">
+     <p>This is a paragraph</p></div>
+     <div class="box">
+     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere est consectetur ab blanditiis, commodi eveniet distinctio labore dicta unde earum aperiam quos modi recusandae ad deserunt animi similique sint dolorum, accusantium omnis aliquid!
+     </div><hr>
+     <div class="html">Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+     <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel impedit, animi ad ipsa minima illum!</div><hr>
+    
+     <div class="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt cumque quia sapiente minima? Necessitatibus, inventore rem minima est reiciendis quis officia, assumenda perspiciatis impedit commodi quas explicabo esse, maxime alias. Laboriosam, modi.</div>
+     <div class="box4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit blanditiis quo in nam possimus quisquam quae? Repellendus sapiente a itaque quibusdam exercitationem.</div>
+
+</body>
+</html>

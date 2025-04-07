@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+}
+#navbar::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+#navbar .nav{
+    min-width: 25%;
+    width: 40vw;
+    height: 100%;
+    display: flex;
+}
+#navbar input[type=search]{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 15px;
+   display: inline-block;
+   font-size: 1.1rem;
+    border-style: groove ;
+    background: url(s.png) no-repeat center
+    center/cover;
+    background-size: 35px ;
+    background-color: white;
+    background-position: 0px 0px;
+    text-align: center;
+    
+  }
+
+#navbar .block1{
+    max-width: 60%;
+    height: 100%;
+    width: 60vw;
+    display: flex;
+    
+    justify-content: space-around;
+  
+
+}
+
+#navbar .block1 .box1{
+    width: 15vw;
+    height: 100%;
+    padding: 0px 10px;
+   margin: 5px;
+ 
+}
+
+#navbar .block1 .box2{
+    width: 15vw;
+    height: 100%;
+    padding: 0px 25px;
+    margin: 5px;
+}
+#navbar .block1 .box3{
+    width: 15vw;
+    height: 100%;
+    padding: 0px 25px;
+    margin: 5px;
+}
+#navbar .block1 .box4{
+    width: 15vw;
+    height: 100%;
+    padding: 0px 25px;
+    margin: 5px;
+}
+
+
+@media screen and (min-width: 300px) {
+    #navbar .block1 .box1{
+        width: 15vw;
+        height: 100%;
+        padding: 0px 10px;
+       margin: 5px;
+     
+    }
+    
+    #navbar .block1 .box2{
+        width: 15vw;
+        height: 100%;
+        padding: 0px 25px;
+        margin: 5px;
+    }
+    #navbar .block1 .box3{
+        width: 15vw;
+        height: 100%;
+        padding: 0px 25px;
+        margin: 5px;
+    }
+    #navbar .block1 .box4{
+        width: 15vw;
+        height: 100%;
+        padding: 0px 25px;
+        margin: 5px;
+    }
+    
+    
+  }
+
+  

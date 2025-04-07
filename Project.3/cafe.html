@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe_Project</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+          scroll-behavior: smooth;
+        }
+        :root{
+          --navbar-height:59px;
+        }
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    z-index: 5;
+}
+
+
+#navbar  input[type=search]{
+            padding: 20px;
+          width: 40vw;
+          margin: 10px;
+        border:2px solid black;
+        border-style: groove;
+        border-radius: 20px;
+        height: 5vh;
+         font-size: 18px; 
+        background-position: 0% 50%;
+        background-repeat: no-repeat;
+        background-size: 40px; 
+        background-image: url(s.png);
+        background-color: white; 
+        display: inline-block;
+        position: relative;
+        left: 45px;
+} 
+#navbar ul{
+    display: flex;
+    padding: 19px;
+    position: relative;
+    left: 40%; 
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+  border: 2px solid yellow;
+    border-radius: 10px;
+    padding: 0px 10px;
+    background-color: yellow;
+    display: block;
+}
+#navbar ul li a:hover{
+    color: yellow;
+    background-color:black; 
+}
+
+#home{
+    display: inline-block;
+}
+
+#home ul{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.737);
+    height: 1200px;
+    width: 165px;
+border-radius: 0px 35px 0px 0px;
+}
+#home ul li{
+ list-style: none;
+ font-size: 1.1rem;
+padding: 10px;
+margin: 5px;
+font-size: 1.1rem;
+}
+#home ul li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+   border-radius: 0px 10px 10px 0px;
+   padding: 5px 1px;
+  /* border-block-end: 1px solid white; */
+   vertical-align: middle;
+}
+#home ul li a:hover{
+    color: black;
+    background-color: yellow;
+}
+.main{
+    display: inline-block;
+    
+    height: 200px;
+    width: 85vw;
+    border: 2px solid rgb(207, 190, 190);
+  margin: 20px ;
+   border-radius: 20px 0px 0px 20px;
+   transform: translateY(-600px);
+   z-index: 5;
+   
+   /*background:url(boxx1.jpg) no-repeat center center/cover;*/
+}
+@media(max-width:600px){
+    .main{
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: aqua;
+    }
+}
+
+  
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <input type="search">
+        <ul>
+            <li class="item"><a href="#">sin in</a></li>
+        </ul>
+    </nav>
+   <section id="home">
+    <ul>
+       <li class="items"><a href="#">Home </a></li>
+       <li class="items"><a href="#">Shivam</a></li>
+       <li class="items"><a href="#">Contact us</a></li>
+       <li class="items"><a href="#">Location</a></li>
+       <li class="items"><a href="#">Feedback</a></li>
+       <li class="items"><a href="#">About us</a></li><hr><br>
+       <li class="items"><a href="#">BREAKFAST 🍲</a></li><li class="items"><a href="#">PASTA 🍜</a></li>
+       <li class="items"><a href="#">PIZZA 🍕</a></li>
+       <li class="items"><a href="#">BURGER 🍔</a></li>
+       <li class="items"><a href="#">ICE CREAM 🍧</a></li>
+       <li class="items"><a href="#">CAKES 🎂</a></li>
+       <li class="items"><a href="#">LUNCH 🥘</a></li>
+       <li class="items"><a href="#">COFFEE ☕️</a></li>
+       <li class="items"><a href="#">COCKTAILS 🍻</a></li>
+    </ul>
+ </section>
+ <div class="main"></div>
+</body>
+</html>

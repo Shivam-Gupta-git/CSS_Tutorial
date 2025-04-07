@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Float Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #navbar{
+            display: flex;
+            position: sticky;
+            top: 0px;
+            align-items: center;
+        }
+        #navbar::before{
+            content: "";
+            z-index: -1;
+            opacity: 0.4;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+        }
+        #navbar ul{
+            display: flex;
+            padding: 20px;
+        }
+        #navbar ul li{
+            list-style: none;
+            font-size: 1.2rem;
+        }
+        #navbar ul li a{
+            text-decoration: none;
+            padding: 5px 25px;
+            color: white;
+            border-radius: 10px;
+        }
+        #navbar ul li a:hover{
+            background-color: black;
+            color: white;
+        }
+        #container{
+            display: flex;
+            justify-content: space-between;
+        }
+        #container .left{
+            height: 100vh;
+            width: 40vw;
+            background-color: blue;
+        }
+        #container .right{
+            height: 100vh;
+            width: 40vw;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Location</a></li>
+            <li class="item"><a href="#">Contact us</a></li>
+            <li class="item"><a href="#">About us</a></li>
+        </ul>
+    </nav>
+    <header id="container">
+           <div class="left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia mollitia consectetur exercitationem sunt esse? Illum nam, ullam animi in error accusantium accusamus inventore non fugiat quas et. Possimus facilis dolorem officia voluptates laboriosam.</div>
+           <div class="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem soluta quia, provident laudantium error minus! Sunt, est. Nisi quam deleniti reiciendis, nulla dolor magni itaque sapiente corporis maxime vitae adipisci laborum ipsum dolorem inventore dolore doloremque harum eligendi explicabo molestias autem at blanditiis molestiae.</div>
+    </header>
+</body>
+</html>

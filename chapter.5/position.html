@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            display: inline;
+        }
+        header{
+           background-color: black;
+           color: white;
+           height: 60px;
+        }
+        .container{
+            background-color: aqua;
+            height: 70vh;
+            width: 60vw;
+            margin: auto;
+        }
+        .container p{
+            text-align: center;
+            border: 2px solid gray;
+        }
+        /* Position Relative */
+        .box{
+            background-color: bisque;
+            height: 30vh;
+            width: 30vw;
+            position: relative;
+            top: 15px;
+            left: 50px;
+          
+        }
+
+        /* Position absolute */
+        .con{
+           background-color: aquamarine; 
+           height: 60vh;
+           width: 50vw;
+           margin: auto;
+        }
+        .con p{
+            text-align: center;
+            border: 2px solid gray;
+            
+        }
+        .con1{
+            height: 30vh;
+            width: 30vw;
+            background-color: yellowgreen;
+            position: absolute;
+             }
+.con2{
+    height: 35vh;
+            width: 33vw;
+            background-color: rgb(50, 81, 205);
+
+}
+    </style>
+</head>
+<body>
+   <header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+   </header> 
+   <div class="container"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum veritatis dolorem alias similique. Error libero ad beatae doloremque sequi aliquam cupiditate, officia harum placeat pariatur ab, natus molestias aut quia necessitatibus itaque expedita?</p>
+    <div class="box">Lorem ipsum dolor sit amet consectetur.</div>
+</div><hr>
+<div class="con"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic aspernatur placeat corrupti commodi cum odit?</p>
+<div class="con1">Lorem ipsum dolor sit amet consectetur.
+</div>
+<div class="con2">Lorem ipsum dolor sit amet consectetur.</div>
+</div>
+</body>
+</html>

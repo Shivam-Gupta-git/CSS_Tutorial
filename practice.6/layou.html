@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #navbar{
+            display: flex;
+            position: sticky;
+            text-align: center;
+            top: 0px;
+        }
+        #navbar::before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            opacity: 0.4;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+}
+#navbar ul{
+    display: flex;
+    padding: 20px;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    text-decoration: none;
+    padding: 5px 20px;
+    color:white;
+    border-radius: 15px;
+}
+#navbar ul li a:hover{
+    background-color: yellow;
+    color: black;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 180px; 
+}
+
+
+ #container::before{
+content: "";
+position: absolute;
+z-index: -1;
+opacity: 0.90;
+background: url(boxx1.jpg) no-repeat center
+center/cover;
+width: 100%;
+height: 350px;
+top: 0;
+left: 0;
+} 
+#container  h1{
+    text-align: center;
+    font-size: 2.2rem;
+    color: white;
+    padding: 15px;
+}
+
+#container  p{
+  text-align: center;
+  font-size: 1.1rem;
+  color: white;
+  padding: 10px;
+  
+}
+
+#box{
+
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box .box1{
+ height: 250px;
+ width: 200px;
+ margin: 10px;
+}
+#box .box1 img{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+}
+#box .box2{
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+}
+#box .box2 img{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+}
+#box .box3{
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+}
+#box .box3 img{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+}
+#box .box4{
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+}
+#box .box4 img{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+}
+#box .box5{
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+} 
+#box .box5 img{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="items"><a href="#">Home</a></li>
+            <li class="items"><a href="#">Location</a></li>
+            <li class="items"><a href="#">Contact us</a></li>
+            <li class="items"><a href="#">About us</a></li>
+        </ul>
+    </nav>
+    <header id="container">
+         <h1>Lorem ipsum dolor sit amet.</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum odio, officia, ipsa nesciunt odit doloribus aliquid vel laborum ad architecto rerum nemo suscipit cupiditate iste sunt dignissimos excepturi beatae in aut ducimus commodi illo? Totam quae sequi praesentium delectus quidem. Quae, molestias eos.</p>
+    </header><br>
+    <section id="box">
+          <div class="box1">
+            <img src="box1.jpg" alt="">
+          </div>
+          <div class="box2">
+            <img src="box2.jpg" alt="">
+          </div>
+          <div class="box3">
+            <img src="box3.jpeg" alt="">
+          </div>
+          <div class="box4">
+            <img src="box4.jpg" alt="">
+          </div>
+          <div class="box5">
+            <img src="box5.jpg" alt="">
+          </div>
+        
+    </section><br>
+
+  </div>
+</body>
+</html>
