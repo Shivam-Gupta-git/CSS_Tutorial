@@ -1,0 +1,50 @@
+.header{
+  background-color: rgb(105, 105, 9);
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.topic{
+  margin-left: 10px;
+  color: white;
+}
+
+.heading-1{
+  background-color: aliceblue;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid rgb(193, 222, 248);
+  border-radius: 10px;
+}
+.heading-1-paragraph-1{
+  color: rgb(237, 94, 94);
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px  gray;
+}
+.heading-1-span-1{
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  text-decoration: underline;
+  text-transform: capitalize;
+  text-rendering: geometricPrecision;
+}
+
+.heading-2{
+  background-color: rgb(163, 206, 245);
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid rgb(48, 152, 242);
+  border-radius: 10px;
+}
+.heading-2-paragraph-2{
+  color: rgb(50, 49, 49);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
