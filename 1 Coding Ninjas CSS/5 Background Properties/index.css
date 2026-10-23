@@ -1,0 +1,55 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header{
+  background-color: beige;
+  height: 50px;
+  width: 100%;
+  border: 1px solid rgb(205, 203, 203);
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.header-subHeading-1{
+color: goldenrod;
+margin-left: 10px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-shadow: 1px 1px 5px goldenrod;
+letter-spacing: 2px;
+}
+
+#section-1{
+  width: 90vw;
+  height: 50vh;
+  border: 1px solid rgb(214, 209, 209);
+  margin-top: 10px;
+  border-radius: 20px;
+  background-image: url("./Dance.jpg");
+  background-repeat: no-repeat;
+  background-position: 20px 30px;
+  background-size: cover;
+  background-color: rgb(182, 216, 245);
+}
+
+#section-2{
+  border: 1px solid black;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-image: url("./Gemini_Generated_Image_ssv1oqssv1oqssv1-clean.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-2-paragraph-1{
+  font-size: large;
+}
+.section-2-paragraph-2{
+  font-size: large;
+}
