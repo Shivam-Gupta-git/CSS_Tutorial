@@ -1,0 +1,60 @@
+.header{
+  background-color: antiquewhite;
+  height: 50px;
+  width: 100%;
+  border: 1px solid rgb(245, 211, 166);
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  align-items: center;
+}
+.header-heading-1{
+  margin-left: 10px;
+  color: rgb(62, 9, 111);
+  font-size: 1.5rem;
+}
+
+#section-1{
+  border: 1px solid rgb(105, 69, 15);
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: rgb(189, 116, 21);
+}
+.section-1-paragraph-1{
+  color: white;
+  font-size: 2em;
+}
+
+/* em */
+#section-2{
+  background-color: aquamarine;
+  width: 4em;
+  height: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-2-div-1{
+background-color: antiquewhite;
+width: 2em;
+height: 4em;
+}
+
+/* rem */
+#section-3{
+  background-color: blue;
+  width: 2rem;
+  height: 4rem;
+}
+
+/* Viewport Units (vw and vh) */
+#section-4{
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid rgb(238, 205, 205);
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+

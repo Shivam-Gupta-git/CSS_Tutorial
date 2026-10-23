@@ -1,0 +1,24 @@
+.header{
+background-color: rgb(13, 109, 77);
+height: 50px;
+display: flex;
+align-items: center;
+position: sticky;
+top: 0;
+left: 0;
+}
+.header-heading-1{
+  margin-left: 10px;
+  color: azure;
+}
+#Type-Selector{
+  background-color: aliceblue;
+  padding: 5px;
+  margin-top: 10px;
+  border: 1px solid rgb(179, 217, 251);
+  border-radius: 10px;
+}
+p{
+  color: blue;
+  font-size: 20px;
+}
