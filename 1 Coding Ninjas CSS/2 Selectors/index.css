@@ -1,0 +1,98 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgb(229, 226, 226);
+  padding: 10px;
+  height: 40px;
+}
+.nav-ul{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-activites{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-activites:hover{
+  background-color: rgb(8, 8, 106);
+  color: white;
+  padding: 5px 10px 5px 10px ;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.heading1{
+  color: rgb(72, 72, 72);
+}
+
+.paragraph-1{
+  color: rgb(3, 3, 120);
+}
+.paragraph-2{
+  color: rgb(99, 3, 3);
+}
+.paragraph-3{
+  color: rgb(4, 99, 176);
+}
+#act{
+  background-color: rgb(249, 247, 247);
+  padding: 5px;
+  border-radius: 5px;
+}
+.activites{
+  color: rgb(37, 125, 136);
+  text-decoration: underline;
+}
+.activites-list{
+  color: rgb(39, 99, 99);
+}
+.activites-list:hover{
+  color: black;
+  background-color: rgb(213, 212, 212);
+}
+
+#nearby{
+  background-color: rgb(222, 219, 219);
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.nearby-attraction{
+  color: rgb(35, 81, 128);
+  text-decoration: underline;
+}
+.nearby-attraction-list{
+  color: rgb(35, 81, 128);
+}
+.nearby-attraction-list:hover{
+  color: black;
+  background-color: rgb(189, 187, 187);
+}
+
+#recommended-restauranr{
+  background-color: rgb(196, 192, 192);
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.recommended-restaurant{
+  color: rgb(61, 14, 106);
+  text-decoration: underline;
+}
+.recommended-restaurant-list{
+  color: rgb(61, 14, 106);
+}
+
+.recommended-restaurant-list:hover{
+  color: black;
+  background-color: rgb(235, 231, 231);
+}
+
