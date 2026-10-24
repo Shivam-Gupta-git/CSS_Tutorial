@@ -1,0 +1,19 @@
+.header{
+  background-color: rgb(245, 220, 245);
+  height: 50px;
+  width: 100%;
+  border: 1px solid rgb(205, 203, 203);
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.header-subHeading-1{
+  color: rgb(128, 32, 218);
+  margin-left: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px 5px rgb(94, 72, 14);
+  letter-spacing: 2px;
+  }
