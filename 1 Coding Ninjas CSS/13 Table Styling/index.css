@@ -1,0 +1,32 @@
+.header{
+  background-color: rgb(245, 222, 220);
+  height: 50px;
+  width: 100%;
+  border: 1px solid rgb(205, 203, 203);
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.header-subHeading-1{
+  color: rgb(218, 32, 32);
+  margin-left: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px 5px rgb(94, 72, 14);
+  letter-spacing: 2px;
+}
+
+table, th, td{
+  border: 2px solid rgb(135, 135, 136);
+  text-align: center;
+  color: rgb(23, 77, 103);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 3px;
+}
+
+table{
+  border-collapse: collapse;
+  background-color: rgb(213, 211, 211);
+}
