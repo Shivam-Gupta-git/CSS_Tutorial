@@ -1,0 +1,37 @@
+.header{
+  background-color: rgb(245, 235, 220);
+  height: 50px;
+  width: 100%;
+  border: 1px solid rgb(205, 203, 203);
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.header-subHeading-1{
+  color: rgb(218, 88, 32);
+  margin-left: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px 5px rgb(94, 72, 14);
+  letter-spacing: 2px;
+}
+
+/* Section 1 */
+.section-1{
+background-color: aliceblue;
+padding: 10px;
+border: 1px solid rgb(153, 204, 248);
+margin-top: 10px;
+border-radius: 5px;
+}
+
+.section-1-list-1{
+  list-style-type: korean-hanja-informal;
+  list-style-position: inside;
+}
+.section-1-list-2{
+  list-style: lower-alpha outside;
+}
+
