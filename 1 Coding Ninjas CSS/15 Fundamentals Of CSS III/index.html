@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamental of CSS III</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Combinators -->
+    <header class="header">
+      <h2 class="header-subHeading-1">Combinators</h2>
+    </header>
+    <!-- Combinators-main -->
+    <main>
+      <!-- Descendant Combinator ( ) -->
+      <section id="Combinators-section-1">
+        <header class="Combinators-section-1-header-1">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Section</a>
+          <div class="Combinators-section-1-container-1">
+            <a href="#">User Details</a>
+            <a href="#">User Contact</a>
+          </div>
+        </header>
+        <nav>
+          <a href="#">Summery</a>
+          <a href="#">Auction</a>
+        </nav>
+      </section>
+
+      <!-- Child Combinator (>) -->
+      <section id="Child-Combinator-section-1">
+        <div class="Child-Combinator-container-1">
+          <p>Child Combinator (>)</p>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+            facilis iure eius odit quasi. Voluptatum officiis nulla ut
+            reprehenderit, libero autem asperiores dicta hic harum assumenda
+            expedita, sunt doloremque suscipit!
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic dolor
+            odio libero ex doloremque placeat neque nostrum mollitia sequi
+            labore, quisquam suscipit repellat praesentium nesciunt!
+          </p>
+
+          <section>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perferendis quam possimus blanditiis distinctio officia? Ratione,
+              minima. Obcaecati, accusamus quam suscipit tempora repudiandae
+              nesciunt qui incidunt quaerat natus odio adipisci officia. Cumque
+              eveniet, nulla ex, dignissimos sit voluptate unde repellendus a
+              impedit inventore obcaecati molestiae odit error, velit
+              accusantium voluptatibus at?
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <!-- Adjacent Sibling Combinator (+) -->
+      <section id="adjacent-sibling-combinator-section-1">
+        <div class="adjacent-sibling-combinator-container-1">
+          <p>Adjacent Sibling Combinator (+)</p>
+        </div>
+        <div>
+          <h2 class="adjacent-sibling-combinator-head">Heading</h2>
+          <p class="adjacent-sibling-combinator-para">Paragraph 1</p>
+          <p class="adjacent-sibling-combinator-para">Paragraph 2</p>
+        </div>
+      </section>
+
+      <!-- General Sibling Combinator (+) -->
+      <section id="General-Sibling-Combinator-section-1">
+        <div class="General-Sibling-Combinator-container-1">
+          <p>General Sibling Combinator (+)</p>
+        </div>
+        <div>
+          <h2 class="General-Sibling-Combinator-Sub-head">Heading</h2>
+
+          <p class="General-Sibling-Combinator-para">Paragraph 1</p>
+          
+          <p class="General-Sibling-Combinator-para">Paragraph 2</p>
+          
+          <div class="General-Sibling-Combinator-container">Some content</div>
+          
+          <p class="General-Sibling-Combinator-para">Paragraph 3</p>
+        </div>
+      </section>
+    </main>
+
+    
+  </body>
+</html>
