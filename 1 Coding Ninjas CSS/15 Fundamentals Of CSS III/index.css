@@ -125,3 +125,102 @@ div > p {
 .General-Sibling-Combinator-Sub-head ~ .General-Sibling-Combinator-para{
   color: purple;
 }
+
+/* Universal Selector */
+#Universal-Selector-section-1{
+width: 100%;
+height: auto;
+background-color: gray;
+}
+* {
+color: rgb(226, 222, 222);
+}
+
+.Universal-Selector-button-1{
+  color: black;
+  background-color: aliceblue;
+  border: none;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+/* Attribute Selectors ([]) */
+#Attribute-Selectors-section-1{
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+gap: 5px;
+background-color: antiquewhite;
+margin-top: 5px;
+margin-bottom: 5px;
+color: black;
+
+}
+
+input[placeholder] {
+  border: 2px solid rgb(151, 151, 252);
+  color: black;
+  width: 30%;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  height: 40px;
+}
+
+
+/* Pseudo-Classes */
+#Pseudo-Classes-section-1{
+  width: 100%;
+  height: auto;
+  background-color: azure;
+  border: 1px solid rgb(157, 244, 244);
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.Pseudo-Classes-section-1-head-1{
+  color: black;
+  font-weight: normal;font-size: 18px;
+
+}
+.Pseudo-Classes-section-1-button-1,
+.Pseudo-Classes-section-1-button-2
+
+{
+  background-color: antiquewhite;
+  border: 1px solid rgb(243, 214, 176);
+  padding: 2px 10px;
+  color: black;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.Pseudo-Classes-section-1-button-1:hover{
+  box-shadow: 2px 3px 10px 2px gray;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+.Pseudo-Classes-section-1-button-2:active{
+  background-color: red;
+}
+
+input:focus {
+  border: 2px solid rgb(247, 150, 236);
+  outline: none;
+}
+
+.Pseudo-Classes-section-1-para-1:first-child {
+  color: red;
+}
+
+.Pseudo-Classes-section-1-para-2:last-child{
+  color: red;
+}
+
+li:nth-child(2) {
+  color: blue;
+}

@@ -83,16 +83,78 @@
           <h2 class="General-Sibling-Combinator-Sub-head">Heading</h2>
 
           <p class="General-Sibling-Combinator-para">Paragraph 1</p>
-          
+
           <p class="General-Sibling-Combinator-para">Paragraph 2</p>
-          
+
           <div class="General-Sibling-Combinator-container">Some content</div>
-          
+
           <p class="General-Sibling-Combinator-para">Paragraph 3</p>
         </div>
       </section>
     </main>
 
-    
+    <!--  Universal Selector (*) -->
+    <header class="header">
+      <h2 class="header-subHeading-1">Universal Selector</h2>
+    </header>
+    <main>
+      <section id="Universal-Selector-section-1">
+        <h1 class="Universal-Selector-hedinh-1">Welcome</h1>
+        <p class="Universal-Selector-para-1">This is a paragraph.</p>
+        <button class="Universal-Selector-button-1">Click Me</button>
+      </section>
+    </main>
+
+    <!-- Attribute Selectors ([]) -->
+    <header class="header">
+      <h2 class="header-subHeading-1">Attribute Selectors</h2>
+    </header>
+    <main>
+      <section id="Attribute-Selectors-section-1">
+        <input type="text" placeholder="Enter your name" />
+
+        <input type="password" placeholder="Enter password" />
+
+        <input placeholder="Enter your email" />
+      </section>
+    </main>
+
+    <!-- Pseudo-Classes -->
+    <header class="header">
+      <h2 class="header-subHeading-1">Pseudo-Classes</h2>
+    </header>
+    <section id="Pseudo-Classes-section-1">
+
+      <h2 class="Pseudo-Classes-section-1-head-1">:Hover</h2>
+      <button class="Pseudo-Classes-section-1-button-1">Click Me</button>
+
+      <h2 class="Pseudo-Classes-section-1-head-1"> || :active</h2>
+      <button class="Pseudo-Classes-section-1-button-2">Click Me</button>
+
+      <h2 class="Pseudo-Classes-section-1-head-1">|| :focus — Input Focus</h2>
+      <input type="text" placeholder="Enter your name">
+
+      <h2 class="Pseudo-Classes-section-1-head-1">|| :first-child — First Child</h2>
+      <div class="Pseudo-Classes-section-1-container-1">
+        <p class="Pseudo-Classes-section-1-para-1">Apple</p>
+        <p class="Pseudo-Classes-section-1-para-1">Banana</p>
+        <p class="Pseudo-Classes-section-1-para-1">Mango</p>
+      </div>
+
+      <h2 class="Pseudo-Classes-section-1-head-1">|| :last — last Child</h2>
+      <div class="Pseudo-Classes-section-1-container-2">
+        <p class="Pseudo-Classes-section-1-para-2">Apple</p>
+        <p class="Pseudo-Classes-section-1-para-2">Banana</p>
+        <p class="Pseudo-Classes-section-1-para-2">Mango</p>
+      </div>
+
+      <h2 class="Pseudo-Classes-section-1-head-1">|| :nth-child() — Select by Position</h2>
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Orange</li>
+      </ul>
+    </section>
   </body>
 </html>
