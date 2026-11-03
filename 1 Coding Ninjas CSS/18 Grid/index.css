@@ -159,3 +159,112 @@ body{
   text-align: center;
   border-radius: 10px;
 }
+
+/* Grid Template */
+.grid-templet-section-8 {
+  width: 100%;
+  min-height: 400px;
+  background-color: rgb(254, 234, 209);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "head head"
+    "nav main"
+    "footer footer";
+  gap: 10px;
+}
+
+.grid-templet-section-8-container-1 {
+  background-color: rgb(161, 160, 161);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  grid-area: head;
+}
+
+.grid-templet-section-8-container-2 {
+  background-color: rgb(161, 248, 245);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  grid-area: nav;
+}
+
+.grid-templet-section-8-container-3 {
+  background-color: rgb(255, 198, 255);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  grid-area: main;
+}
+
+.grid-templet-section-8-container-4 {
+  background-color: rgb(177, 250, 219);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  grid-area: footer;
+
+}
+
+/* nested-grid */
+.nested-grid-section-9 {
+  width: 100%;
+  min-height: 400px;
+  background-color: rgb(254, 234, 209);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 100px 500px auto;
+  grid-template-areas:
+    "head head"
+    "nav main"
+    "footer footer";
+  gap: 10px;
+}
+
+.nested-grid-section-9-container-1 {
+  background-color: rgb(105, 103, 105);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  grid-area: head;
+}
+
+.nested-grid-section-9-container-2 {
+  background-color: rgb(83, 146, 144);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  grid-area: nav;
+}
+
+.nested-grid-section-9-container-3 {
+  background-color: rgb(132, 76, 132);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, auto));
+  grid-column-gap: 100px;
+  grid-row-gap: 20px;
+}
+
+.nested-grid-section-9-container-4 {
+  background-color: rgb(68, 108, 91);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  grid-area: footer;
+}
+
+.nested-grid-section-9-container-3-nested-container-1{
+ background-color: antiquewhite;
+ border: 1px solid gray;
+ border-radius: 10px;
+}
