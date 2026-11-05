@@ -1,0 +1,154 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+header{
+  width: 100%;
+  height: 50px;
+  background-color: rgb(255, 176, 176);
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+header > h1{
+  font-size: 23px;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 2px 5px 5px rgb(39, 38, 38);
+  color: rgb(33, 18, 108);
+  margin-left: 5px;
+}
+/* .responsive-design-section-1{
+
+} */
+.responsive-design-section-1-container-1{
+  height: 40vh;
+  width: 100%;
+  background-color: rgba(241, 247, 193, 0.851);
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.responsive-design-section-1-container-1 > h1{
+  color: rgb(250, 170, 71);
+  margin-left: 0.8rem;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+.responsive-design-section-1-container-1 > p{
+  color: rgb(161, 108, 42);
+  width: 80%;
+  margin-left: 0.8rem;
+  margin-top: -1rem;
+  font-size: 1rem;
+}
+@media screen and (max-width:600px){
+  .responsive-design-section-1-container-1{
+    height: 30vh;
+    background-color: black;
+  }
+  .responsive-design-section-1-container-1 > h1{
+    font-size: 1.5rem;
+    color: white;
+  }
+  .responsive-design-section-1-container-1 > p{
+    font-size: 0.9rem;
+    color: white;
+  }
+}
+
+@media screen and (max-width:350px){
+  .responsive-design-section-1-container-1{
+    height: auto;
+  }
+  .responsive-design-section-1-container-1 > p{
+    font-size: 0.6rem;
+    margin-top: .1rem;
+    margin-bottom: 5rem;
+  }
+}
+
+/* min and max width */
+.responsive-design-section-2{
+  height: 40vh;
+  width: 100%;
+  background-color: rgba(247, 233, 193, 0.851);
+  border-radius: 5px;
+  margin-top: 5px;
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+.responsive-design-section-2-container-1{
+width: 50%;
+height: 80%;
+background-color: lightcyan;
+border-radius: 10px;
+}
+@media screen and (max-width:980px) and (min-width: 780px) {
+  .responsive-design-section-2-container-1{
+    background-color: lightseagreen;
+  }
+}
+
+@media screen and (max-width:779px) and (min-width: 580px) {
+  .responsive-design-section-2-container-1{
+    background-color: rgb(131, 208, 245);
+  }
+}
+
+/* mobile first vs desktop first approch */
+.responsive-design-section-3{
+  height: auto;
+  width: 100%;
+  background-color: rgba(247, 233, 193, 0.851);
+  border-radius: 5px;
+  margin-top: 5px;
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+.responsive-design-section-3-container-1{
+width: 50%;
+height: auto;
+background-color: lightcyan;
+border-radius: 10px;
+margin-top: 1rem;
+padding: 5px;
+}
+.responsive-design-section-3-container-1 > p{
+  column-count: 1;
+  font-size: 0.5rem;
+}
+
+@media screen and (min-width:720px) {
+  .responsive-design-section-3{
+    height: 300px;
+  }
+  .responsive-design-section-3-container-1{
+    background-color: lightsalmon;
+  }
+  .responsive-design-section-3-container-1 > p{
+    font-size: .9rem;
+    column-count: 2;
+  }
+}
+
+@media screen and (min-width:1020px) {
+  .responsive-design-section-3{
+    height: 300px;
+  }
+  .responsive-design-section-3-container-1{
+    background-color: lightgrey;
+  }
+  .responsive-design-section-3-container-1 > p{
+    font-size: 1rem;
+    column-count: 3;
+  }
+}
+
+
+
+
+
