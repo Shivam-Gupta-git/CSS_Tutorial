@@ -1,0 +1,192 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color: lightgrey;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 1px 2px 10px 2px rgba(141, 140, 140, 0.74);
+  border-bottom: 1px solid rgb(153, 152, 152);
+}
+header > h1{
+  margin-left: 5px;
+  font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 1px 2px 3px gray;
+}
+
+.animation-section-1-container-1{
+  height: 200px;
+  width: 200px;
+  background-color: lightcoral;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 10px 10px ;
+  text-align: center;
+  padding: 20px;
+
+
+  transition-duration: 2s;
+  transition-delay: 2s;
+}
+.animation-section-1-container-2{
+  height: 200px;
+  width: 200px;
+  background-color: rgb(240, 234, 128);
+  display: inline-block;
+  border-radius: 5px;
+  border-radius: 50%;
+  margin: 10px 10px ;
+  text-align: center;
+  padding: 20px;
+}
+
+.animation-section-1-container-1:hover{
+background-color: rgb(249, 114, 134);
+border-radius: 5px;
+height: 300px;
+
+}
+.animation-section-1-container-2:hover{
+
+background-color: rgb(244, 222, 83);
+border-radius: 5px;
+height: 300px;
+}
+
+/* Transition Timing Function */
+.Transition-section-2{
+  width: 100%;
+  background-color: antiquewhite;
+}
+.Transition-section-2:hover .box{
+  background-color: rgb(127, 54, 26);
+  width: 300px;
+}
+.box{
+  height: 100px;
+  width: 200px;
+  background-color: lightseagreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px rgb(5, 43, 41);
+  color: white;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.trans{
+  transition-duration: 2s;
+  transition-property: all;
+}
+.ease-in{
+  transition-timing-function: ease-in;
+}
+.ease-out{
+  transition-timing-function: ease-out;
+}
+.ease-in-out{
+  transition-timing-function: ease-in-out;
+}
+.step-start{
+  transition-timing-function: step-start;
+}
+.step-end{
+  transition-timing-function: step-end;
+}
+.steps{
+  transition-timing-function: steps(5);
+}
+
+/* Transform */
+.Transition-section-3{
+  background-color: antiquewhite;
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+.Transition-section-3-box{
+height: 150px;
+width: 150px;
+display: inline-block;
+background-color: rgb(54, 171, 244);
+border: solid rgb(33, 94, 132);
+border-width: 5px 2px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 20px;
+color: white;
+text-align: center;
+
+
+transition-duration: 2s;
+
+}
+
+.rotate:hover{
+  transform: rotate(180deg);
+  border-radius: 50%;
+}
+.scale:hover{
+  transform: scale(1.2);
+}
+.translate:hover{
+  transform: translate(50px);
+}
+.translate-and-rotating:hover{
+  transform: translate(100px) rotate(180deg);
+  border-radius: 50%;
+}
+.translate-and-rotating-scale:hover{
+  transform: translate(50px) rotate(360deg) scale(0.5);
+}
+
+.Transition-section-4{
+width: 100%;
+height: 400px;
+background-color: antiquewhite;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+align-items: center;
+justify-items: center;
+}
+
+.Transition-section-4-box-1{
+height: 150px;
+width: 150px;
+display: inline-block;
+background-color: rgb(244, 219, 54);
+border: solid rgb(132, 104, 33);
+border-width: 5px 2px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 20px;
+color: black;
+font-weight: 700;
+text-align: center;
+
+
+transition-duration: 2s;
+}
+.rotate-X:hover{
+  transform: rotateX(60deg);
+}
+.rotate-Y:hover{
+  transform: rotateY(60deg);
+}
+.rotate-Z:hover{
+  transform: rotateZ(60deg);
+}

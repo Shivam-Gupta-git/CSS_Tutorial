@@ -1,0 +1,35 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.section-1-container-1{
+  width: 100%;
+  height: 700px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: relative;
+}
+.section-1-container-1 > .img1{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+}
+.section-1-container-1 > .img2{
+  position: absolute;
+  height: 50px;
+  bottom: 50%;
+  left: -6%;
+  filter: opacity(90%);
+  transition-property: all;
+  transform: rotate(25deg);
+  transition-duration: 4s;
+  transition-timing-function: ease-in-out;
+  
+}
+
+.section-1-container-1:hover .img2{
+bottom: 105%;
+left: 90%;
+}
