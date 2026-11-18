@@ -64,3 +64,22 @@ header > h1{
 .section-12{
   background-color: rgb(243, 243, 146);
 }
+.section-13{
+  background-color: rgb(105, 240, 247);
+}
+.section-14{
+  background-color: beige;
+}
+
+.section-14 .card{
+width: 30%;
+}
+.section-14 .card .card-img-top{
+  height: 200px;
+  width: 100%;
+}
+
+.section-14 .card-group{
+  display: flex;
+  gap: 5px;
+}
